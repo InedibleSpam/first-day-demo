@@ -1,0 +1,49 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 0 10px;
+    background: url('https://t4.ftcdn.net/jpg/04/79/72/95/360_F_479729552_fvosxXnahfU9M6oUvY9omu6cxHkPy52d.jpg') no-repeat center center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    padding: 80px 0;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+    font-size: 27px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background: none;
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 15px 45px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #000;
+    border-color: #000;
+    cursor: pointer;
+}
