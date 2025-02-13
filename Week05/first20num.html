@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First 20 Numbers</title>
+    <style>
+        table {
+            width: 200px;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="numberTable"></table>
+
+    <script>
+        const table = document.getElementById("numberTable");
+        let number = 1;
+        
+        for (let row = 0; row < 5; row++) {
+            let tr = document.createElement("tr");
+            for (let col = 0; col < 4; col++) {
+                if (number <= 20) {
+                    let td = document.createElement("td");
+                    td.textContent = number;
+                    tr.appendChild(td);
+                    number++;
+                }
+            }
+            table.appendChild(tr);
+        }
+    </script>
+</body>
+</html>
