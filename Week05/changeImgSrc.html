@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<img id="image" src="https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg" width="200px" height="200px"/>
+
+<script>
+    document.getElementById("image").addEventListener("click", changeImage);
+    let isClicked = false;
+    function changeImage(){
+        if(isClicked==true){
+            let x=document.getElementById("image").src="https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg";
+            isClicked=false;
+        }
+        else{
+            let x=document.getElementById("image").src="https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg";
+            isClicked=true;
+        }
+
+    }
+</script>
+    
+</body>
+</html>

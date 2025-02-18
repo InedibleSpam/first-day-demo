@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="calculator">
+
+        <div id="text">
+            <input id="output" readonly>
+        </div>
+        <div id="buttons">
+            <div id="functions">
+                <button id="function" value="+" onclick="Solve('+')">+</button>
+                <button id="function" value="-" onclick="Solve('-')">-</button>
+                <button id="function" value="*" onclick="Solve('*')">&times;</button>
+                <button id="function" value="/" onclick="Solve('/')">&divide;</button>
+                <button id="function" onclick="Clear()">AC</button>
+                <button id="function" value="=" onclick="Calculate()">=</button>
+            </div>
+            <div id="numbers">
+                <button id="1" value="1" onclick="Solve('1')">1</button>
+                <button id="2" value="2" onclick="Solve('2')">2</button>
+                <button id="3" value="3" onclick="Solve('3')">3</button>
+                <button id="4" value="4" onclick="Solve('4')">4</button>
+                <button id="5" value="5" onclick="Solve('5')">5</button>
+                <button id="6" value="6" onclick="Solve('6')">6</button>
+                <button id="7" value="7" onclick="Solve('7')">7</button>
+                <button id="8" value="8" onclick="Solve('8')">8</button>
+                <button id="9" value="9" onclick="Solve('9')">9</button>
+                <button id="0" value="0" onclick="Solve('0')">0</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var x = document.getElementById('output');
+        function Solve(val) {
+            x.value += val;
+        }
+        function Clear() {
+            x.value = "";
+        }
+        function Calculate() {
+            x.value = eval(x.value);
+        }
+    </script>
+</body>
+
+</html>
